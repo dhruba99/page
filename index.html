@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb18030">
+    <title>Onlineswithegirlfriend - Find Best Girl Friends</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/fav-icon.png" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/script.js"></script>
+
+    <style>
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: yellow;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        #myBtn:hover {
+            background-color: blue;
+        }
+
+        span.red {
+            color: #fff;
+            background: #000;
+            padding: 2px;
+        }
+
+        span.green {
+            color: #fff;
+            background: #90c94e;
+            padding: 2px;
+        }
+
+        .ajax-loader {
+            visibility: hidden;
+            background-color: rgba(255, 255, 255, 0.7);
+            position: absolute;
+            z-index: +100 !important;
+            width: 80%;
+            height: auto;
+        }
+
+        .ajax-loader img {
+            position: relative;
+            left: 40%;
+        }
+
+        /* Important part */
+
+        .modal-dialog {
+            overflow-y: initial !important
+        }
+
+        .modal-body {
+            height: 500px;
+            overflow-y: auto;
+        }
+
+        /* Slideshow container */
+
+        .slideshow-container {
+            position: relative;
+            background: #f1f1f1f1;
+        }
+
+        /* Slides */
+
+        .mySlides {
+            display: none;
+            padding: 80px;
+            text-align: center;
+        }
+
+        /* Next & previous buttons */
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -30px;
+            padding: 16px;
+            color: #888;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+
+        .next {
+            position: absolute;
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+
+        /* The dot/bullet/indicator container */
+
+        .dot-container {
+            text-align: center;
+            padding: 5px;
+            background: #fb33db;
+        }
+
+        /* The dots/bullets/indicators */
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: yellow;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        /* Add a background color to the active dot/circle */
+
+        .active,
+        .dot:hover {
+            background-color: #ccc;
+        }
+
+        /* Add an italic font style to all quotes */
+
+        q {
+            font-style: italic;
+        }
+
+        /* Add a blue color to the author */
+
+        .author {
+            color: cornflowerblue;
+        }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-STMYBPL7X2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-STMYBPL7X2');
+    </script>
+
+    <!-- Google tag (gtag.js) Google ADs -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10948499383"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-10948499383');
+    </script>
+
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KLSZ3RXB');
+    </script>
+    <!-- End Google Tag Manager -->
+
+</head>
+
+<body>
+    <!--
+<nav class="navbar navbar-expand-lg navbar-light bg-danger text-white" id="welcome">
+	<div class="container">
+	    	<span class="navbar-text text-white text-center">
+     Let's start talking and chatting with OnlineswithEgirlFrnd <br> 
+      <strong>Call Now: <a href="tel:+91-8609653341" class="font-weight-bold text-white" style="font-size:20px;">+91-8609653341</a></strong>
+    </span>
+   
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText" style="justify-content: flex-end;">
+    <ul class="nav navbar-nav ml-5">
+      <li class="nav-item active">
+        <a class="nav-link text-white" href="index.php">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#aboutus">About Us</a>
+      </li>
+	  
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#plans">Membership &amp; Plans</a>
+      </li>
+	  
+	    <li class="nav-item">
+        <a class="nav-link text-white" href="#contact">Contact</a>
+      </li>
+	  
+    </ul>
+  </div>
+  </div>
+</nav> -->
+
+    <!-- register profile -->
+    <div class="container-fluid bg-pink py-2">
+
+        <div class="container onlinenow">
+            <center> <a href="/"><img src="img/logo.png" class="img-fluid"></a> </center>
+            <h3 class="pt-2 text-white" align="center"><strong class="number-highlight3 px-2"> Live Online Members
+                </strong></h3>
+            <p align="center" class="text-white small"> Single Girl number for friendship waiting for you... </p>
+            <p align="center"><img src="img/line11.png" class="img-fluid"></p>
+            <!-- testing	<div class="row">
+    	     <p align="center">
+    	        <a href="https://m.me/yourdishapatel" target="_blank"> <img src="img/19.jpg" style="border:5px solid #fff; width:85%; margin-bottom:4px;"></a><br>
+    	       <span class="mt-4 number-highlight2 d-block rounded py-2"><a href="https://m.me/yourdishapatel" target="_blank"><img src="img/fb-m.png"></a>&nbsp;<a href="https://m.me/yourdishapatel" target="_blank"><img src="img/insta-m.png"></a></span>
+    	       </p>
+    	    
+    	</div> -->
+            <div class="row mb-5 imgAppend" id="welcome">
+                <!-- Files are in script.js -->
+            </div>
+        </div>
+    </div>
+    <!-- end of register profile -->
+
+
+
+
+    <!-- Form -->
+    <div class="container-fluid reg-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 align="center" class="mt-1 text-white">Connecting Female Partner across India</h3>
+                    <div class="registration_form_s pt-1 px-2">
+                        <div class="alert alert-danger" id="errorMessage" style="display:none;"><strong>Mobile Number
+                                already exist!</strong></div>
+                        <div class="alert alert-success" id="successMessage" style="display:none;"><strong>Record has
+                                been inserted successfully!</strong></div>
+                        <div class="ajax-loader">
+                            <img src="img/imageloader.gif" class="img-responsive">
+                        </div>
+
+                        <form action="#" class="form-horizontal" id="formPost" method="POST">
+                            <div class="row mb-2">
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control" id="profile_name" name="profile_name"
+                                        placeholder="Name" required="required">
+                                    <span class="red" id="profile_name_error" style="display:none;"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12 mb-2 col-6">
+                                    <select class="form-control" id="profile_gender" name="profile_gender">
+                                        <option value="M">Male</option>
+                                    </select>
+                                    <span class="red" id="profile_gender_error" style="display:none;"></span>
+                                </div>
+                                <div class="col-md-6 col-sm-12 mb-2 col-6">
+                                    <select class="form-control" id="profile_age" name="profile_age">
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                        <option value="32">32</option>
+                                        <option value="33">33</option>
+                                        <option value="34">34</option>
+                                        <option value="35">35</option>
+                                        <option value="36">36</option>
+                                        <option value="37">37</option>
+                                        <option value="38">38</option>
+                                        <option value="39">39</option>
+                                        <option value="40">40</option>
+                                        <option value="41">41</option>
+                                        <option value="42">42</option>
+                                        <option value="43">43</option>
+                                        <option value="44">44</option>
+                                        <option value="45">45</option>
+                                        <option value="46">46</option>
+                                        <option value="47">47</option>
+                                        <option value="48">48</option>
+                                        <option value="49">49</option>
+                                        <option value="50">50</option>
+                                        <option value="51">51</option>
+                                        <option value="52">52</option>
+                                        <option value="53">53</option>
+                                        <option value="54">54</option>
+                                        <option value="55">55</option>
+                                        <option value="56">56</option>
+                                        <option value="57">57</option>
+                                        <option value="58">58</option>
+                                        <option value="59">59</option>
+                                        <option value="60">60</option>
+                                        <option value="61">61</option>
+                                        <option value="62">62</option>
+                                        <option value="63">63</option>
+                                        <option value="64">64</option>
+                                        <option value="65">65</option>
+                                        <option value="66">66</option>
+                                        <option value="67">67</option>
+                                        <option value="68">68</option>
+                                        <option value="69">69</option>
+                                        <option value="70">70</option>
+                                        <option value="71">71</option>
+                                        <option value="72">72</option>
+                                        <option value="73">73</option>
+                                        <option value="74">74</option>
+                                        <option value="75">75</option>
+                                        <option value="76">76</option>
+                                        <option value="77">77</option>
+                                        <option value="78">78</option>
+                                        <option value="79">79</option>
+                                        <option value="80">80</option>
+                                    </select>
+                                    <span class="red" id="profile_age_error" style="display:none;"></span>
+                                </div>
+                            </div>
+                            <!-- <div class="row mb-2">
+                                                <div class="col-md-12 col-sm-12">
+                                                    <input class="form-control" type="text" id="profile_email" name="profile_email" placeholder="Email (Not Compulsary)" required="required">
+                                                    <span class="red" id="profile_email_error" style="display:none;"></span>
+                                                </div>
+                                            </div> -->
+                            <div class="row mb-2">
+                                <div class="col-md-12 col-sm-12">
+                                    <input class="form-control" type="number" id="profile_mobile" name="profile_mobile"
+                                        placeholder="Mobile (10 Digit)" required="required" maxlength="10">
+                                    <span class="red" id="profile_mobile_error" style="display:none;"></span>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-md-12 col-sm-12">
+                                    <input class="form-control" type="text" id="profile_city" name="profile_city"
+                                        placeholder="City" required="required">
+                                    <span class="red" id="profile_city_error" style="display:none;"></span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12" style="margin-bottom:10px;">
+                                    <input onclick="sendEmail()" type="button"
+                                        class="number-highlight3 w-100 d-block size30 btn" id="formPostClick"
+                                        name="submit" value="~ Submit ~">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">&nbsp;</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-warning py-4">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-2 col-6 col-my-2">
+                    <div class="border border-dark bg-white rounded py-2 my-2">
+                        <center style="height:100px;"><img src="img/a.png" alt="Card image cap"> </center>
+                        <h5 align="center" class="font-weight-bold w-75 mx-auto">Verified Profiles</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-6">
+                    <div class="border border-dark bg-white rounded py-2 my-2">
+                        <center style="height:100px;"><img src="img/b.png" alt="Card image cap"> </center>
+                        <h5 align="center" class="font-weight-bold w-75 mx-auto">Call With Friends</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-6">
+                    <div class="border border-dark bg-white rounded py-2 my-2">
+                        <center style="height:100px;"><img src="img/c.png" alt="Card image cap"> </center>
+                        <h5 align="center" class="font-weight-bold w-75 mx-auto">Profile Matching</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-6">
+                    <div class="border border-dark bg-white rounded py-2 my-2">
+                        <center style="height:100px;"><img src="img/d.png" alt="Card image cap"> </center>
+                        <h5 align="center" class="font-weight-bold w-75 mx-auto">Mobile Chating</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-6">
+                    <div class="border border-dark bg-white rounded py-2 my-2">
+                        <center style="height:100px;"><img src="img/e.png" alt="Card image cap"> </center>
+                        <h5 align="center" class="font-weight-bold w-75 mx-auto">Moneyback Guaranty</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-6">
+                    <div class="border border-dark bg-white rounded py-2 my-2">
+                        <center style="height:100px;"><img src="img/f.png" alt="Card image cap"> </center>
+                        <h5 align="center" class="font-weight-bold w-75 mx-auto">Customer Satisfaction</h5>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid">
+        <div class="row pt-5">
+            <div class="col-md-4 col-6">
+                <center style="height:100px;"><img src="img/shake.png" alt="Card image cap" width="80"> </center>
+                <h3 align="center"><strong>33197</strong></h3>
+                <p align="center">SUCCESS</p>
+            </div>
+
+            <div class="col-md-4 col-6">
+                <center style="height:100px;"><img src="img/happy-clients2.png" alt="Card image cap" width="80">
+                </center>
+                <h3 align="center"><strong>220623</strong></h3>
+                <p align="center">HAPPY CLIENTS</p>
+            </div>
+
+
+            <div class="col-md-4 col-12 bg-light py-2">
+                <center style="height:100px;"><img src="img/cafe.png" alt="Card image cap" width="80"> </center>
+                <h3 align="center"><strong>27390</strong></h3>
+                <p align="center">POSITIVE REVIEWS</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Greetings -->
+    <div class="container-fluid bg-danger text-white">
+        <h2 class="py-3 text-white font-weight-bold" align="center">Greetings! ♥♥ OnlineswithEgirlFrnd</h2>
+        <p align="center"><img src="img/line11.png" class="img-fluid"></p>
+        <div class="container" id="aboutus">
+            <div class="row">
+                <div class="col-md-5 text-center">
+                    <img src="img/hfmodel.png" class="img-fluid" alt="100% Guarantee">
+                </div>
+                <div class="col-md-7">
+                    <p>OnlineswithEgirlFrnd.com is the perfect online dating and friendship website for singles looking for
+                        companionship. Whether you are looking for love, companionship, or just someone to chat with,
+                        OnlineswithEgirlFrnd.com has you covered.
+                        <br><br> Our website takes the hassle out of finding your perfect match and allows you to search
+                        for compatible members in your area. With our exclusive matching algorithm, you can quickly and
+                        easily find the perfect match for
+                        you. Our website also features a range of other features such as instant messaging, private
+                        messaging, and profile views.<br><br> With OnlineswithEgirlFrnd.com, you can quickly and easily find
+                        the perfect match for you. Join us today
+                        and start finding your perfect match!
+                        <br><br> So Without wasting anymore time. Just <a href="#welcome">SIGN UP</a> here and start
+                        exploring thousand of girls number for you. SIGN UP is completly free. Enjoy!!
+                        <em><a href="about-us.html">Read More</a></em>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Greetings -->
+
+    <div class="container-fluid bg-dark">
+        <div class="row">
+            <div class="col-md-4 col-6 text-white bg11 py-3">
+                <center>
+                    <img src="img/icon-1.png" alt="New MEMBERS" width="50"><br> 381,000+ NEW MEMBERS<br> PER MONTH<br>
+                    <p class="small">Average number of monthly global registrations 2018</p>
+                </center>
+            </div>
+
+            <div class="col-md-4 col-6 text-dark bg2 py-3">
+                <center>
+                    <img src="img/icon-2.png" alt="Trust" width="30"><br> SAFE &amp;<br> SECURE
+                    <br>
+                    <p class="small">Daily profile quality checks to ensure a safe friendship experience with real
+                        people</p>
+                </center>
+            </div>
+
+            <div class="col-md-4 col-12 text-white bg3 py-3">
+                <center>
+                    <img src="img/icon-3.png" alt="New MEMBERS" width="40"><br> No.1
+                    <br>Friendship Website<br>
+                    <p class="small">Authentic Profile memebers, You can trust.</p>
+                </center>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Qualtiy Profiles -->
+    <div class="container-fluid bg-grey pt-4">
+        <div class="container">
+            <h2 align="center" class="font-weight-bold">Quality Profiles, waiting for you...</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Your search is over, Here you find beautiful, charming lady which you can talk, chat and meet.
+                        Don't Shy</p>
+                    <center><a href="#" class="btn btn-primary border-0">FRIENDSHIP ME</a></center>
+                </div>
+                <div class="col-md-6"><img src="img/qualtiy-p.png" alt="qualtiy image" class="img-fluid"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5">
+        <h2 align="center" class="font-weight-bold">Our friendship site helps millions find real love</h2>
+        <div class="row">
+            <div class="col-md-3 col-6">
+                <center>
+                    <img src="img/01-new-members.webp" alt="New MEMBERS"><br> OVER 2 MILLION HAVE <br> FOUND LOVE<br>
+                    <small>… could you be next?</small>
+                </center>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <center>
+                    <img src="img/02-female-male.webp" alt="Trust"><br> 30% MEN<br> 70% WOMEN<br>
+                    <small>Quality matches for everyone.</small>
+                </center>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <center>
+                    <img src="img/03-success-rate.webp" alt="New MEMBERS"><br> SITE MOST LIKELY TO LEAD<br>TO HAPPY
+                    RELATIONSHIPS<br>
+                    <small>… the right one may be waiting for you!</small>
+                </center>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <center>
+                    <img src="img/04-academic-rate.webp" alt="New MEMBERS"><br> 2.3 MILLION MESSAGES SENT <br>WEEKLY<br>
+                    <small>See who wants to talk to you!</small>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <!-- we are here for you -->
+    <div class="container-fluid bg-orange py-5">
+        <div class="container">
+            <h2 align="center" class="font-weight-bold">We’re Here For You</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <p align="center">Signing up for OnlineswithEgirlFrnd is the first step in finding your next great
+                        relationship. From profile tips to sharing your success story, we are here to support you in
+                        your journey for love. WE’RE AVAILABLE 24/7, 365 DAYS A YEAR</p>
+                    <center> <a href="#" class="btn btn-primary border-0">CONTACT US</a></center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Qualtiy Profiles -->
+    <div class="container-fluid bg-grey py-5">
+        <div class="container">
+            <h2 align="center" class="font-weight-bold">The #1 Trusted Friendship Website...</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>We have 7+ years of trusted partners girlfriends and boyfriends under our profile list, with a
+                        dedicated Trust and Safety team by your side.</p>
+                    <center><a href="#" class="btn btn-primary border-0">JOIN NOW</a></center>
+                </div>
+                <div class="col-md-6"><img src="img/trustedDatingSite.png" alt="qualtiy image" class="img-fluid"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- FAQ -->
+    <div class="container-fluid bg-light faq" id="faq">
+        <h2 align="center" class="pt-3 font-weight-bold">Frequently Asked Questions</h2>
+        <p align="center"><img src="img/line11.png" class="img-fluid"></p>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <p><button class="btn btn-primary" type="button" data-toggle="collapse"
+                            data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <h5>Q. Is This Company Genuine?</h5>
+                        </button></p>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                            <p>This company was more than 4 years old. We have more than 10000 registered members across
+                                India. We match many couples, Its mission is also to help you - our valued customer - in
+                                the best manner possible. To be with you at
+                                all times, to guide you, to support you and yes, to help you grow as an individual.</p>
+                        </div>
+                    </div>
+
+                    <p><button class="btn btn-primary" type="button" data-toggle="collapse"
+                            data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                            <h5>Q. What Kinds Of Friends Profile Are Offering?</h5>
+                        </button></p>
+                    <div class="collapse" id="collapseExample2">
+                        <div class="card card-body">
+                            <p>You will get all type of profile according to your choice. It can be single, married,
+                                divorcee etc. All you have to do is tell our customer care executive ,the friends you
+                                want and we will happy to search for you the contact
+                                of the friends from our database every week.</p>
+                        </div>
+                    </div>
+
+                    <p><button class="btn btn-primary" type="button" data-toggle="collapse"
+                            data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+                            <h5>Q. Whose Contact No. You Will Provide Me For Friendship?</h5>
+                        </button></p>
+                    <div class="collapse" id="collapseExample3">
+                        <div class="card card-body">
+                            <p>The people like you and me who has registered themselves in our company to get friends
+                                like you. All you have to do is to register with us for free or call us next you should
+                                remember your Membership id for reference.</p>
+                        </div>
+                    </div>
+
+                    <p><button class="btn btn-primary" type="button" data-toggle="collapse"
+                            data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
+                            <h5>Q. If I Take Membership Then I Get Genuine Service & Risk Free?</h5>
+                        </button></p>
+                    <div class="collapse" id="collapseExample4">
+                        <div class="card card-body">
+                            <p>Yes premiumfriendship is totally risk free where you can take membership which cost is
+                                very low and enjoy with your friends CHAT, FRIENDSHIP, ROMANCE, CALL, and many more
+                                Funs.</p>
+                        </div>
+                    </div>
+
+                    <p><button class="btn btn-primary" type="button" data-toggle="collapse"
+                            data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">
+                            <h5>Q. The No. I Get Is Genuine And Do They Talk To Me?</h5>
+                        </button></p>
+                    <div class="collapse" id="collapseExample5">
+                        <div class="card card-body">
+                            <p>Yes, the no. we provide is 100% genuine, when you get the phone number just give your
+                                membership ID as reference and start talking. They will also talk because they have
+                                register themselves in there own will. More over they
+                                also need friends like you. You also chat , massege with them.</p>
+                        </div>
+                    </div>
+
+                    <p><button class="btn btn-primary" type="button" data-toggle="collapse"
+                            data-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample">
+                            <h5>Q. Can I get my Refund of Registration ?</h5>
+                        </button></p>
+                    <div class="collapse" id="collapseExample6">
+                        <div class="card card-body">
+                            <p>Yes, we understand your privacy carefully. However, if you are not satisfy with our
+                                services, you can always ask for refund. or you can call our Customer services for
+                                further talk.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- End of FAQ -->
+
+
+
+    <!-- Contact -->
+    <div class="container-fluid bg-danger text-white py-5" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p align="center"><img src="img/love-to.png" alt="heart love"></p>
+                    <h2 align="center" class="font-weight-bold">WE’RE HERE FOR YOU</h2>
+                    <p align="center">When it comes to Best Friend, Girl Friends, everyone has questions. That’s why our
+                        Customer Care team is here to reply any questions you may have about friendship. The <a
+                            href="#faq">FAQ</a> section is designed to answers all your
+                        queries you are searching for at OnlineswithEgirlFrnd.com</p>
+                    <p align="center">WE’RE AVAILABLE 24/7, 365 DAYS A YEAR</p>
+                    <center>General Query: <a
+                            href="mailto: info@OnlineswithEgirlFrnd.com"><em><u>info@OnlineswithEgirlFrnd.com</u></em></a><br>
+                        Complain: <a
+                            href="mailto: complain@OnlineswithEgirlFrnd.com"><em><u>complain@OnlineswithEgirlFrnd.com</u></em></a>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Membership Plan -->
+    <div class="container-fluid bg-grey py-5" id="plans">
+        <div class="container">
+            <h2 align="center" class="font-weight-bold">FIND THE MEMBERSHIP THAT SUITS FOR YOU</h2>
+            <p align="center">When it comes to find a right girlfriend or best friend who would understand you and Love
+                you, It is a great place to find the right person you are searching for. Just Register Now.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="font-weight-bold bg-primary text-white text-center">FRIENDSHIP-LIVE BASIC</h3>
+                    <p>
+                    <ul class="list-unstyled border border-primary p-2">
+                        <li>√ Get Access to millions of Singel Female Profile </li>
+                        <li>√ Unlimited Friendship matches</li>
+                        <li>√ Use of all Features tools: Chats, WhatsApp & Skype</li>
+                        <li>√ Limited WhatsaApp Chat</li>
+                    </ul>
+                    </p>
+                </div>
+
+
+
+                <div class="col-md-6">
+                    <h3 class="font-weight-bold bg-orange text-white text-center">FRIENDSHIP-LIVE GOLD</h3>
+                    <p>
+                    <ul class="list-unstyled border border-warning p-2">
+                        <li>√ Get Access to millions of Singel Female Profile </li>
+                        <li>√ Unlimited Friendship matches</li>
+                        <li>√ Use of all Features tools: Chats, WhatsApp & Skype</li>
+                        <li>√ Limited WhatsaApp Chat</li>
+
+                        <li>√ View unlimited profile pictures</li>
+                        <li>√ Video Call feature</li>
+                        <li>√ See who’s following you</li>
+                        <li>√ Detail search</li>
+                        <li>√ Detailed Interest Profile</li>
+                        <li>√ 24x7 customer service</li>
+                    </ul>
+                    </p>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="container-fluid bg-light py-4" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p align="center"><img src="img/heart-love.png" alt="heart love"></p>
+                    <h2 align="center" class="font-weight-bold"> FIND REAL LOVE NOW! </h2>
+                    <h3 align="center"><a href="#welcome"
+                            class="font-weight-bold number-highlight3 rounded text-white px-2 py-1">START CHAT TODAY</a>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer nav -->
+    <div class="container-fluid bg-primary text-white pt-4 pb-1" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-6 small">
+                    <a href="#welcome" class="text-white d-block">. ABOUT FLIVE </a>
+                    <a href="contact.php" class="text-white d-block">. CONTACT </a>
+                    <a href="#welcome" class="text-white d-block">. OnlineswithEgirlFrnd FAQ </a>
+                    <a href="#welcome" class="text-white d-block">. SUCCESS </a>
+                    <a href="#welcome" class="text-white d-block">. STORIES </a>
+                    <a href="#welcome" class="text-white d-block">. ABOUT US </a>
+                    <a href="#welcome" class="text-white d-block">&nbsp; </a>
+                </div>
+                <div class="col-md-3 col-6 small">
+                    <a href="#welcome" class="text-white d-block">. SAFETY TIPS </a>
+                    <a href="terms.html" class="text-white d-block">. TERMS </a>
+                    <a href="privacy-policy.html" class="text-white d-block">. PRIVACY POLICY </a>
+                    <a href="#welcome" class="text-white d-block">. HELP </a>
+                    <a href="disclaimer.html" class="text-white d-block">. DISCLAIMER </a>
+                    <a href="#welcome" class="text-white d-block">. PRESS </a>
+                    <a href="#welcome" class="text-white d-block">&nbsp; </a>
+                </div>
+
+
+
+                <div class="col-md-3 col-6 small">
+                    <a href="#welcome" class="text-white d-block">. LIVE-IN </a>
+                    <a href="#welcome" class="text-white d-block">. HOW TO COOL ? </a>
+                    <a href="#welcome" class="text-white d-block">. HOW TO TALK CONFIDENT ? </a>
+                    <a href="#welcome" class="text-white d-block">. FRIENDSHIP TIPS </a>
+                    <a href="#welcome" class="text-white d-block">. DATING TIPS </a>
+                    <a href="#welcome" class="text-white d-block">. FRIENDSHIP ADVICE</a>
+                </div>
+
+                <div class="col-md-3 col-6 small">
+                    <a href="#welcome" class="text-white d-block">. LIVE FRIENDSHIP </a>
+                    <a href="#welcome" class="text-white d-block">. FRIENDS NEAR ME </a>
+                    <a href="#welcome" class="text-white d-block">. GETTING TO KNOW </a>
+                    <a href="#welcome" class="text-white d-block">. ATTRACTION </a>
+                    <a href="#welcome" class="text-white d-block">. BREAKING UP </a>
+                    <a href="#welcome" class="text-white d-block">. RELATIONSHIP ISSUES </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid bg-dark text-white py-4" id="contact">
+        <div class="container">
+            <h2 align="center" class="font-weight-bold"> Follow Us On<br> <br>
+                <a href="#"><img src="img/social-media.png" alt="social media" class="img-fluid"></a>
+            </h2>
+        </div>
+    </div>
+    <footer class="py-2 pink">
+        <div class="container">
+
+            <p class="text-white" align="center"> © 2000-2023 OnlineswithEgirlFrnd, Inc. - Made with ❤ in India<br> Tested <img
+                    src="img/secure-ssl.svg"> Service</p>
+
+        </div>
+    </footer>
+
+    <!-- contact js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "ZlxzB2AiVyk2BABqN",
+            });
+        })();
+    </script>
+    <script>
+        function validateEmail(sEmail) {
+            var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+            if (filter.test(sEmail)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        function sendEmail() {
+            let parms = {
+                name: document.getElementById("profile_name").value,
+                age: document.getElementById("profile_age").value,
+                phone: document.getElementById("profile_mobile").value,
+                city: document.getElementById("profile_city").value,
+            }
+
+            emailjs.send("service_6q1y0gg","template_tz28u34",parms);
+        }
+
+        $(document).ready(function () {
+
+            function call_ajax(profile_mobile) {
+                return $.ajax({
+                    method: "POST",
+                    url: "check_mobile.php",
+                    data: {
+                        profile_mobile_no: profile_mobile
+                    }
+                });
+            }
+
+
+            $('#profile_mobile').on('keyup', function (e) {
+                if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+                    $("#profile_mobile").focus();
+                    $("#profile_mobile_error").show();
+                    $("#profile_mobile_error").html("Please enter numeric value only").show().fadeOut("slow");
+                    return false;
+                }
+            });
+            $('#profile_name').on('keyup', function (e) {
+                if (e.which >= 48 && e.which <= 57) {
+                    $("#profile_name").focus();
+                    $("#profile_name_error").show();
+                    $("#profile_name_error").html("Please enter character only").show().fadeOut("slow");
+                    return false;
+                }
+            });
+            $('#profile_city').on('keyup', function (e) {
+                if (e.which >= 48 && e.which <= 57) {
+                    $("#profile_city").focus();
+                    $("#profile_city_error").show();
+                    $("#profile_city_error").html("Please enter character only").show().fadeOut("slow");
+                    return false;
+                }
+            });
+            $("#formPostClick").click(function () {
+                var check_mobile = '';
+                var profile_name = $("#profile_name").val();
+                var profile_gender = $("#profile_gender").val();
+                var profile_age = $("#profile_age").val();
+                var profile_email = $("#profile_email").val();
+                var profile_mobile = $("#profile_mobile").val();
+                var profile_city = $("#profile_city").val();
+
+
+                profile_mobile = profile_mobile.replace(/[^0-9]/g, '');
+
+                if ($("#profile_mobile").val().length > 0) {
+
+                    $.when(call_ajax(profile_mobile)).done(function (res) {
+                        check_mobile = res;
+                    });
+                }
+
+                if ($("#profile_name").val().length === 0) {
+                    $("#profile_name").focus();
+                    $("#profile_name_error").show();
+                    $("#profile_name_error").html("Please enter full name here!");
+                    $("#profile_name_error").fadeIn(1000).delay(1000).fadeOut(1000);
+                } else if ($("#profile_gender").val().length === 0) {
+                    $("#profile_gender").focus();
+                    $("#profile_gender_error").show();
+                    $("#profile_gender_error").html("Please select gender here!");
+                    $("#profile_gender_error").fadeIn(1000).delay(1000).fadeOut(1000);
+                } else if ($("#profile_age").val().length === 0) {
+                    $("#profile_age").focus();
+                    $("#profile_age_error").show();
+                    $("#profile_age_error").html("Please select age here!");
+                    $("#profile_age_error").fadeIn(1000).delay(1000).fadeOut(1000);
+                }
+                /* else if ($("#profile_email").val().length === 0) {
+                               $("#profile_email").focus();
+                               $("#profile_email_error").show();
+                               $("#profile_email_error").html("Please enter valid email address here!");
+                               $("#profile_email_error").fadeIn(1000).delay(1000).fadeOut(1000);
+                           }else if (!validateEmail(profile_email)) {
+                               $("#profile_email").focus();
+                               $("#profile_email_error").show();
+                               $("#profile_email_error").html("Invalid Address!");
+                               $("#profile_email_error").fadeIn(1000).delay(1000).fadeOut(1000);                
+                           } */
+                else if ($("#profile_mobile").val().length === 0) {
+                    $("#profile_mobile").focus();
+                    $("#profile_mobile_error").show();
+                    $("#profile_mobile_error").html("Please enter mobile number here!");
+                    $("#profile_mobile_error").fadeIn(1000).delay(1000).fadeOut(1000);
+                } else if (profile_mobile.length != 10) {
+                    $("#profile_mobile").focus();
+                    $("#profile_mobile_error").show();
+                    $("#profile_mobile_error").html("Please enter mobile number 10 digit here!");
+                    $("#profile_mobile_error").fadeIn(1000).delay(1000).fadeOut(1000);
+                } else if (check_mobile == 'exists') {
+                    $("#profile_mobile").focus();
+                    $("#profile_mobile_error").show();
+                    $("#profile_mobile_error").html("Mobile number already exists !");
+                    $("#profile_mobile_error").fadeIn(1000).delay(1000).fadeOut(1000);
+                } else if ($("#profile_city").val().length === 0) {
+                    $("#profile_city").focus();
+                    $("#profile_city_error").show();
+                    $("#profile_city_error").html("Please enter city name here!");
+                    $("#profile_city_error").fadeIn(1000).delay(1000).fadeOut(1000);
+                } else {
+                    var check = confirm("Are you sure you want post registration ?");
+                    // var newWindow = window.open('https://amzn.to/2VAQUuf');
+
+                    if (check) {
+                        $.ajax({
+                            url: "registration.php",
+                            beforeSend: function () {
+                                $('html, body').animate({
+                                    scrollTop: 0
+                                }, 0);
+                                $('.ajax-loader').css("visibility", "visible");
+                            },
+                            cache: false,
+                            type: "POST",
+                            data: {
+                                profile_name: profile_name,
+                                profile_gender: profile_gender,
+                                profile_age: profile_age,
+                                profile_email: profile_email,
+                                profile_mobile: profile_mobile,
+                                profile_city: profile_city
+                            },
+                            success: function (response) {
+
+                                if (response == 1) {
+                                    $("#successMessage").show();
+                                    $("#successMessage").fadeIn(1000).delay(1000).fadeOut(1000);
+                                    // newWindow.location = 'https://amzn.to/2VAQUuf';
+                                    $(location).attr('href', 'thankyou.html');
+
+                                }
+                                /* if (response == 0) {
+                                     $("#errorMessage").show();
+                                     $("#errorMessage").fadeIn(1000).delay(1000).fadeOut(1000);
+                                 }*/
+                                if (response == 2) {
+                                    $("#errorMessage").show();
+                                    $("#errorMessage").fadeIn(1000).delay(1000).fadeOut(1000);
+                                }
+                                $("#formPost").trigger("reset");
+
+                            },
+                            complete: function () {
+                                $('.ajax-loader').css("visibility", "hidden");
+                            }
+                        });
+                    } else {
+                        return false;
+                    }
+                }
+            });
+
+
+
+            /*  Contact form validation & insert data in db */
+            $("#profile_mobile_contactus").keypress(function (e) {
+                if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+                    $("#profile_mobile_contactus").focus();
+                    $("#profile_mobile_contactus_error").show();
+                    $("#profile_mobile_contactus_error").html("Please enter numeric value only").show().fadeOut("slow");
+                    return false;
+                }
+            });
+            $("#profile_name_contactus").keypress(function (e) {
+                if (e.which >= 48 && e.which <= 57) {
+                    $("#profile_name_contactus").focus();
+                    $("#profile_name_contactus_error").show();
+                    $("#profile_name_contactus_error").html("Please enter character only").show().fadeOut("slow");
+                    return false;
+                }
+            });
+            $("#profile_city_contactus").keypress(function (e) {
+                if (e.which >= 48 && e.which <= 57) {
+                    $("#profile_city_contactus").focus();
+                    $("#profile_city_contactus_error").show();
+                    $("#profile_city_contactus_error").html("Please enter character only").show().fadeOut("slow");
+                    return false;
+                }
+            });
+            $("#formPostContactusClick").click(function () {
+                var profile_name_contactus = $("#profile_name_contactus").val();
+                var profile_email_contactus = $("#profile_email_contactus").val();
+                var profile_mobile_contactus = $("#profile_mobile_contactus").val();
+                var profile_city_contactus = $("#profile_city_contactus").val();
+                var profile_subject_contactus = $("#profile_subject_contactus").val();
+                var profile_mesage_contactus = $("#profile_mesage_contactus").val();
+                profile_mobile_contactus = profile_mobile_contactus.replace(/[^0-9]/g, '');
+
+                if ($("#profile_name_contactus").val().length === 0) {
+                    $("#profile_name_contactus").focus();
+                    $("#profile_name_contactus_error").show();
+                    $("#profile_name_contactus_error").html("Please enter full name here!");
+                    $("#profile_name_contactus_error").fadeIn(1000).delay(1000).fadeOut(1000);
+                } else if ($("#profile_mobile_contactus").val().length === 0) {
+                    $("#profile_mobile_contactus").focus();
+                    $("#profile_mobile_contactus_error").show();
+                    $("#profile_mobile_contactus_error").html("Please enter mobile number here!");
+                    $("#profile_mobile_contactus_error").fadeIn(1000).delay(1000).fadeOut(1000);
+                } else if (profile_mobile_contactus.length != 10) {
+                    $("#profile_mobile_contactus").focus();
+                    $("#profile_mobile_contactus_error").show();
+                    $("#profile_mobile_contactus_error").html("Please enter mobile number 10 digit here!");
+                    $("#profile_mobile_contactus_error").fadeIn(1000).delay(1000).fadeOut(1000);
+                }
+                /*else if ($("#profile_email_contactus").val().length === 0) {
+                                $("#profile_email_contactus").focus();
+                                $("#profile_email_contactus_error").show();
+                                $("#profile_email_contactus_error").html("Please enter valid email address here!");
+                                $("#profile_email_contactus_error").fadeIn(1000).delay(1000).fadeOut(1000);
+                            } else if (!validateEmail(profile_email_contactus)) {
+                                $("#profile_email_contactus").focus();
+                                $("#profile_email_contactus_error").show();
+                                $("#profile_email_contactus_error").html("Invalid Address!");
+                                $("#profile_email_contactus_error").fadeIn(1000).delay(1000).fadeOut(1000);                
+                            }*/
+                else if ($("#profile_city_contactus").val().length === 0) {
+                    $("#profile_city_contactus").focus();
+                    $("#profile_city_contactus_error").show();
+                    $("#profile_city_contactus_error").html("Please enter city name here!");
+                    $("#profile_city_contactus_error").fadeIn(1000).delay(1000).fadeOut(1000);
+                } else if ($("#profile_subject_contactus").val().length === 0) {
+                    $("#profile_subject_contactus").focus();
+                    $("#profile_subject_contactus_error").show();
+                    $("#profile_subject_contactus_error").html("Please select subject here!");
+                    $("#profile_subject_contactus_error").fadeIn(1000).delay(1000).fadeOut(1000);
+                } else if ($("#profile_mesage_contactus").val().length === 0) {
+                    $("#profile_mesage_contactus").focus();
+                    $("#profile_mesage_contactus_error").show();
+                    $("#profile_mesage_contactus_error").html("Please enter message here!");
+                    $("#profile_mesage_contactus_error").fadeIn(1000).delay(1000).fadeOut(1000);
+                } else {
+                    var check = confirm("Are you sure you want post contact us query ?");
+                    if (check) {
+                        $.ajax({
+                            url: "contact_process.php",
+                            beforeSend: function () {
+                                $('html, body').animate({
+                                    scrollTop: 0
+                                }, 0);
+                                $('.ajax-loader').css("visibility", "visible");
+                            },
+                            cache: false,
+                            type: "POST",
+                            data: {
+                                profile_name_contactus: profile_name_contactus,
+                                profile_email_contactus: profile_email_contactus,
+                                profile_mobile_contactus: profile_mobile_contactus,
+                                profile_city_contactus: profile_city_contactus,
+                                profile_subject_contactus: profile_subject_contactus,
+                                profile_mesage_contactus: profile_mesage_contactus
+                            },
+                            success: function (response) {
+                                if (response == 1) {
+                                    $("#successMessage").show();
+                                    $("#successMessage").fadeIn(1000).delay(1000).fadeOut(1000);
+
+                                }
+                                if (response == 0) {
+                                    $("#errorMessage").show();
+                                    $("#errorMessage").fadeIn(1000).delay(1000).fadeOut(1000);
+                                }
+                                $("#contactForm").trigger("reset");
+
+                            },
+                            complete: function () {
+                                $('.ajax-loader').css("visibility", "hidden");
+                            }
+                        });
+                    } else {
+                        return false;
+                    }
+                }
+            });
+
+
+
+
+            /*$('#contactForm').validate({
+                rules: {
+                    name: {
+                        required: true,
+                        minlength: 2
+                    },
+                    subject: {
+                        required: true,
+                        minlength: 4
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    message: {
+                        required: true,
+                        minlength: 20
+                    }
+                },
+                messages: {
+                    name: {
+                        required: "come on, you have a name, don't you?",
+                        minlength: "your name must consist of at least 2 characters"
+                    },
+                    subject: {
+                        required: "come on, you have a web subject, don't you?",
+                        minlength: "your subject must consist of at least 4 characters"
+                    },
+                    email: {
+                        required: "no email, no message"
+                    },
+                    message: {
+                        required: "um...yea, you have to write something to send this form.",
+                        minlength: "thats all? really?"
+                    }
+                },
+                submitHandler: function (form) {
+                    $(form).ajaxSubmit({
+                        type: "POST",
+                        data: $(form).serialize(),
+                        url: "contact_process.php",
+                        success: function (res) {
+                            if (res == 1) {
+                                $('#contactForm :input').attr('disabled', 'disabled');
+                                $('#contactForm').fadeTo("slow", 0.15, function () {
+                                    $(this).find(':input').attr('disabled', 'disabled');
+                                    $(this).find('label').css('cursor', 'default');
+                                    $('#success').fadeIn()
+                                });
+                            }
+                        },
+                        error: function () {
+                            $('#contactForm').fadeTo("slow", 0.15, function () {
+                                $('#error').fadeIn()
+                            })
+                        }
+                    })
+                }
+            })*/
+        });
+    </script>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">🏹</button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+</body>
+
+</html>

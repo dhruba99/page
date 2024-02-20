@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister|Titillium+Web');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister');
+html {
+    scroll-behavior: smooth;
+}
+
+.size30 {
+    font-size: 30px;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+}
+
+.blue1 {
+    background-color: #fe00fe !important;
+}
+
+.bg-pink {
+    background-color: #fe027b;
+}
+
+.bg-black2 {
+    background-color: #0c0c0c;
+}
+
+.alert-info {
+    background-color: #fff !important;
+}
+
+.bg-orange {
+    background: #FDC85A url("../img/diamond.jpg") repeat fixed center;
+}
+
+.active,
+.dot:hover {
+    background-color: inherit !important;
+}
+
+.reg-bg .container,
+footer .container {
+    background-color: inherit !important;
+}
+
+.pink {
+    background-color: #fb33db;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.carefont {
+    font-family: 'Anton', sans-serif;
+}
+
+p.small {
+    line-height: inherit !important;
+}
+
+body p {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    /*line-height:1.2; */
+}
+
+body h3,
+body h2,
+body h1 {
+    font-family: 'Poiret One', cursive;
+    font-weight: normal;
+    letter-spacing: 1px !important;
+}
+
+.bg1 {
+    background: url("../img/bg.jpg") repeat left center;
+}
+
+.img-box {
+    text-align: center;
+    background: url("../img/pattern1.jpg") no-repeat center center;
+    padding: 0px 0 20px;
+    margin: 10px auto 20px auto;
+    border: 5px solid #CC6590;
+}
+
+.reg-bg {
+    height: inherit;
+    background: url("../img/reg.jpg") no-repeat left top;
+    background-size: cover;
+}
+
+.reg-bg2 {
+    height: 300px;
+    background: url("../img/about-us-2.jpg") no-repeat left -35px;
+    background-size: cover;
+}
+
+.pink2 {
+    background-color: #FF00CE !important;
+}
+
+.pink2-color {
+    color: #FF00CE !important;
+}
+
+.pink3 {
+    background: #333333;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #dd1818, #333333);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #dd1818, #333333);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.pink4 {
+    background: #0310ea;
+}
+
+.pink44 {
+    background: #CC6590;
+}
+
+.white11 {
+    background: rgba(127, 255, 0, 0.8);
+    border-radius: 5px;
+}
+
+.pink5 {
+    background: #0310ea;
+}
+
+.grey2 {
+    background-color: #3D3232
+}
+
+.form-control {
+    background: rgba(255, 255, 0, 0.5);
+    color: #fff;
+    line-height: 1.5 !important;
+    font-size: 1.6rem !important;
+    padding: inherit !important;
+}
+
+::placeholder {
+    color: #fff !important;
+}
+
+label {
+    margin-bottom: inherit;
+    color: inherit;
+}
+
+.btn-big {
+    width: 100%;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #000;
+    color: #fff;
+}
+
+@media only screen and (max-width: 600px) and (orientation:portrait) {
+    .registration_form_s {
+        margin-top: inherit;
+    }
+    .reg-bg {
+        height: inherit !important;
+    }
+}
+
+#error,
+#success {
+    overflow: hidden;
+    clear: both;
+    width: 100%;
+    display: none;
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+    width: 100%;
+    min-height: 250px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.login_btn {
+    font-size: 25px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+form#contactForm {
+    width: 100%;
+}
+
+/*=== Gallery ===*/
+
+.gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+}
+
+.gallery .pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+}
+
+.gallery .animation {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+@media (max-width: 450px) {
+    .gallery {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
+    }
+    .btn-big {
+        font-size: 100% !important;
+    }
+    .card-body {
+        padding: 0 1.25rem;
+    }
+    .card-text:last-child {
+        margin-bottom: 5%;
+    }
+}
+
+@media (max-width: 400px) {
+    .btn.filter {
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+    }
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover,
+.nav-link.active {
+    background-color: #CC6590;
+}
+
+.card {
+    background: inherit !important;
+    border: inherit !important;
+}
+
+.fprofile .card {
+    background-color: #f0f0f0 !important;
+}
+
+.card p.addf small {
+    display: block;
+}
+
+.card img {
+    margin-bottom: 8px;
+}
+
+.card p.addf a {
+    display: inline-block;
+}
+
+p.addf a {
+    text-align: center;
+}
+
+p.addf a.message-f {
+    position: relative;
+    top: 18px;
+}
+
+form label {
+    margin: 22px 0 8px 0;
+}
+
+.prev:hover,
+.next:hover {
+    color: #fff !important;
+}
+
+.onlinenow .row img {
+    transition: transform 0.5s;
+}
+
+.onlinenow .row img:hover {
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+}
+
+/* Bootstrap Lightbox using Modal */
+
+#profile-grid {
+    overflow: auto;
+    white-space: normal;
+}
+
+#profile-grid .profile {
+    padding-bottom: 40px;
+}
+
+#profile-grid .panel {
+    padding: 0
+}
+
+#profile-grid .panel-body {
+    padding: 15px
+}
+
+#profile-grid .profile-name {
+    font-weight: bold;
+}
+
+#profile-grid .thumbnail {
+    margin-bottom: 6px;
+}
+
+#profile-grid .panel-thumbnail {
+    overflow: hidden;
+}
+
+#profile-grid .img-rounded {
+    border-radius: 4px 4px 0 0;
+}
+
+/*====Animation=========*/
+
+.number-highlight2 {
+    background-color: yellow;
+    color: #000;
+    animation-name: btnAni2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes btnAni2 {
+    0% {
+        background-color: yellow;
+        color: #000;
+    }
+    50% {
+        background-color: black;
+        color: #fff;
+    }
+    100% {
+        background-color: yellow;
+        color: #000;
+    }
+}
+
+.number-highlight3 {
+    background-color: yellow;
+    color: #000;
+    animation-name: btnAni3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.number-highlight3:hover {
+    animation-duration: 0s;
+    background-color: yellow;
+    color: #000;
+}
+
+@keyframes btnAni3 {
+    0% {
+        background-color: yellow;
+        color: #000;
+    }
+    50% {
+        background-color: black;
+        color: #fff;
+    }
+    100% {
+        background-color: yellow;
+        color: #000;
+    }
+}
+
+.bg-grey {
+    background-color: #F2F2F2;
+}
+
+.faq .btn {
+    white-space: inherit !important;
+}
+
+.bg11 {
+    background-color: #0000fe;
+}
+
+.bg2 {
+    background-color: #03ff03;
+}
+
+.bg3 {
+    background-color: #ff00fe;
+}
+
+/* Live Button Animation*/
+
+.ani2 {
+    background-color: #FFFF00;
+    animation-name: example;
+    animation-duration: 1.2s;
+    animation: example 1.2s infinite;
+}
+
+@keyframes example {
+    0% {
+        background-color: #FFFF00;
+    }
+    50% {
+        background-color: #000;
+        color: yellow;
+    }
+    100% {
+        background-color: #FFFF00;
+    }
+}
+
+.ani2:hover {
+    animation-duration: 0s;
+    animation: example 0s infinite;
+}
